@@ -1,0 +1,39 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.1.1"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "BlendShapes Loader"
+description="Load gltf file with blendshapes. Check blendshapes in CreateApp, etc."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+icon = "data/icon.jpg"
+preview_image = "data/preview.jpg"
+changelog = "docs/CHANGELOG.md"
+
+# URL of the extension source repository.
+repository = "https://github.com/tanakatarou9123rog/blendshapes-loader"
+
+# One of categories for UI.
+category = "Converter"
+
+# Keywords for the extension
+keywords = ["kit", "BlendShapes", "gltf", "convert"]
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.kit.asset_converter" = {}
+"omni.kit.pipapi" = {}
+"omni.ui" = {}
+"omni.usd" = {}
+
+[python.pipapi]
+requirements = ['numpy', 'pygltflib==1.15.3']
+
+# Main python module this extension provides, it will be publicly available as "import tarou9123.blendshapes.loader".
+[[python.module]]
+name = "tarou9123.blendshapes.loader"
