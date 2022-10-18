@@ -25,7 +25,7 @@ properties, attributes, and relationships.
 Launch the Omniverse Kit-based app and click
 Extension Manager -> Gear Icon -> Extension Search Path
 Add a search path
-`git://github.com/tanakatarou9123rog/blendshapes-loader.git?branch=master&dir=exts`
+`git://github.com/memmem9876/blendshapes-loader.git?branch=main&dir=exts`
 
 # Known Limitations
 
